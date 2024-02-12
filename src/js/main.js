@@ -73,7 +73,20 @@ const sliders = () => {
                 slidesPerView: 3,
             }
         }
-    });
+    })
+    const swiper2 = new Swiper('.js-sliderGallery', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".js-galleryNext",
+            prevEl: ".js-galleryPrev"
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+            }
+        }
+    })
 
 }
 

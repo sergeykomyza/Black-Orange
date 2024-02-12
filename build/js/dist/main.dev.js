@@ -72,6 +72,19 @@ var sliders = function sliders() {
       }
     }
   });
+  var swiper2 = new Swiper('.js-sliderGallery', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".js-galleryNext",
+      prevEl: ".js-galleryPrev"
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3
+      }
+    }
+  });
 }; // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ АККОРДЕОН
 
 

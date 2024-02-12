@@ -1,11 +1,16 @@
 .advantages{
 
+  margin-bottom: 150px;
+  @include mediaWidth2{
+    margin-bottom: 100px;
+  }
+
   &__box{
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 0.87fr 1fr;
     gap: 40px;
-    @include mediaWidth2{
-      flex-direction: column;
+    @include mediaWidth3{
+      grid-template-columns: 1fr;
     }
   }
 
