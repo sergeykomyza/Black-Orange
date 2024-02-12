@@ -1,0 +1,104 @@
+.catalog{
+
+  margin-bottom: 150px;
+  @include mediaWidth2{
+    margin-bottom: 100px;
+  }
+
+  &__button{
+    width: 160px;
+    @include mediaWidth2{
+      max-width: 360px;
+      width: 100%;
+    }
+  }
+
+  &__pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .swiper-pagination-bullet{
+      background: var(--color-1);
+      opacity: 1;
+      border-radius: 50px;
+      transition: all .3s;
+    }
+    .swiper-pagination-bullet-active{
+      width: 46px;
+      background: var(--color-3);
+    }
+  }
+
+  &__slider{
+    .swiper-wrapper{
+      margin-bottom: 50px;
+    }
+  }
+
+}
+
+.candle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px 30px;
+  border-radius: 10px;
+  background: var(--color-5);
+  transition: all .3s;
+
+  &__foto{
+    width: 220px;
+    height: 243px;
+    object-fit: contain;
+    margin-bottom: 35px;
+  }
+
+  &__name{
+    margin-bottom: 25px;
+    font-family: var(--font-1);
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--color-1);
+    transition: all .3s;
+  }
+
+  &__flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 700;
+    color: var(--color-1);
+    border: 1px solid var(--color-1);
+    border-radius: 50px;
+    transition: all .3s;
+    &:hover{
+      background: var(--color-3);
+      border-color: var(--color-3);
+    }
+  }
+
+  &__price{
+     font-size: 22px;
+     line-height: 30px;
+     font-weight: 500;
+     color: var(--color-3);
+  }
+
+  &:hover{
+    background: var(--color-4);
+    .candle__name{
+      color: var(--color-3);
+    }
+  }
+}

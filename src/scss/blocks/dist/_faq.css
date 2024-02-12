@@ -1,0 +1,30 @@
+.faq__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 26px;
+  line-height: 36px;
+  color: var(--color-1);
+  cursor: pointer;
+}
+.faq__content {
+  padding-right: 130px;
+}
+.faq__text {
+  margin-top: 20px;
+  line-height: 150%;
+}
+.faq__icon {
+  transition: all 0.3s;
+}
+.faq__item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(154, 154, 154, 0.5);
+}
+.faq__item.opened .faq__icon {
+  transform: rotate(45deg);
+}
+.faq__item.opened .faq__icon path {
+  fill: var(--color-3);
+}

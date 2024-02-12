@@ -1,0 +1,15 @@
+.choose{
+
+  margin-bottom: 150px;
+  @include mediaWidth2{
+    margin-bottom: 100px; 
+  }
+
+  &__box{
+    max-width: 631px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+}
+

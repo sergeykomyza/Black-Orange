@@ -1,0 +1,50 @@
+.faq{
+  
+  &__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 26px;
+    line-height: 36px;
+    color: var(--color-1);
+    cursor: pointer;
+    @include mediaWidth2{
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+  
+  &__content{
+    padding-right: 130px;
+    @include mediaWidth2{
+      padding-right: 0px;
+    }
+  }
+  
+  &__text{
+    margin-top: 20px;
+    line-height: 150%;
+    @include mediaWidth2{
+      font-size: 14px;
+    }
+  }
+
+  &__icon{
+    transition: all .3s;
+  }
+
+  &__item{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(154, 154, 154, 0.5);
+    &.opened{
+      .faq__icon{
+        transform: rotate(45deg);
+        path{
+          fill: var(--color-3);
+        }
+      }
+    }
+  }
+
+}

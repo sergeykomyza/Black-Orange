@@ -1,0 +1,15 @@
+section.catalog 
+  .container 
+    .section-titlebox 
+      h3.section-title Каталог
+      button.button.catalog__button Смотреть
+    .swiper.catalog__slider.js-sliderCatalog 
+      .swiper-wrapper 
+        each item in [1, 2, 3, 4] 
+          .swiper-slide.candle 
+            img.candle__foto(src="img/slide-candle.webp", alt="@")
+            .candle__name Название свечи
+            .candle__flexbox 
+              button.candle__button Купить
+              span.candle__price 1200 р
+      .catalog__pagination

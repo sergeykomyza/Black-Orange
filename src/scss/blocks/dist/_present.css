@@ -1,0 +1,13 @@
+.present__title {
+  margin-bottom: 65px;
+  font-family: var(--font-1);
+  font-size: 34px;
+  font-weight: 400;
+  color: var(--color-3);
+}
+.present__title--italic {
+  font-style: italic;
+}
+.present__title--pl110 {
+  padding-left: 110px;
+}

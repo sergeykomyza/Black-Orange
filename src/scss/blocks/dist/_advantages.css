@@ -1,0 +1,23 @@
+.advantages__box {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+.advantages__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 40px;
+}
+
+.advantage__icon {
+  margin-bottom: 20px;
+}
+.advantage__name {
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 36px;
+  color: var(--color-1);
+}
+.advantage__text {
+  line-height: 150%;
+}

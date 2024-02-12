@@ -1,0 +1,15 @@
+<svg width="40.000000" height="39.999023" viewBox="0 0 40 39.999" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip53_152">
+			<rect id="free-icon-arrow-right-3106679 1" width="20.000000" height="20.000000" transform="translate(10.000000 9.999023) rotate(0.000031)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<ellipse id="Ellipse 1" rx="19.500000" ry="19.499563" transform="matrix(-1 -1 8.74228e-08 -8.74228e-08 20 19.9995)" stroke="#707070" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	<rect id="free-icon-arrow-right-3106679 1" width="20.000000" height="20.000000" transform="translate(10.000000 9.999023) rotate(0.000031)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip53_152)">
+		<path id="Vector" d="M15.9387 11.999C15.6848 12.1748 15.5872 12.4092 15.6418 12.7217C15.6692 12.8545 16.0442 13.2451 19.2317 16.4326L22.7942 19.999L19.2317 23.5615C15.3606 27.4365 15.5793 27.1943 15.6418 27.5693C15.7043 27.96 16.1497 28.1943 16.552 28.0459C16.6965 27.9912 24.2004 20.4912 24.302 20.3037C24.3411 20.2217 24.3762 20.085 24.3762 19.999C24.3762 19.9131 24.3411 19.7764 24.302 19.6943C24.2004 19.5068 16.6965 12.0068 16.552 11.9521C16.3606 11.8818 16.0793 11.9053 15.9387 11.999Z" fill="#707070" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
