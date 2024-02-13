@@ -1,0 +1,54 @@
+.footer{
+
+  padding-top: 150px;
+  padding-bottom: 135px;
+  background: var(--color-5);
+  @include mediaWidth2{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  &__title{
+    margin-bottom: 200px;
+    font-family: var(--font-1);
+    font-size: 34px;
+    line-height: 45px;
+    color: var(--color-3);
+    @include mediaWidth2{
+      margin-bottom: 60px;
+      font-size: 26px;
+      line-height: 35px;
+      text-align: center;
+    }
+  }
+
+  &__contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mediaWidth2{
+      flex-direction: column;
+      gap: 60px;
+    }
+  }
+
+  &__contact{
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--color-0);
+    &--mail{
+      text-decoration: underline;
+    }
+  }
+
+  &__phone{
+    font-size: 42px;
+    line-height: 57px;
+    color: var(--color-1);
+    @include mediaWidth2{
+      font-size: 38px;
+      line-height: 52px;
+    }
+  }
+
+}

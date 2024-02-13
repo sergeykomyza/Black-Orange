@@ -1,0 +1,30 @@
+.footer {
+  padding-top: 150px;
+  padding-bottom: 135px;
+  background: var(--color-5);
+}
+.footer__title {
+  margin-bottom: 200px;
+  font-family: var(--font-1);
+  font-size: 34px;
+  line-height: 45px;
+  color: var(--color-3);
+}
+.footer__contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__contact {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--color-0);
+}
+.footer__contact--mail {
+  text-decoration: underline;
+}
+.footer__phone {
+  font-size: 42px;
+  line-height: 57px;
+  color: var(--color-1);
+}

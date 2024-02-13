@@ -1,29 +1,30 @@
 "use strict";
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ПРОКРУТКА, ШАПКА
-// document.addEventListener('DOMContentLoaded', function () {
-//     // СКРОЛЛ К НУЖНОЙ СЕКЦИИ ПО КЛИКУ НА ПУНКТАХ МЕНЮ
-//     $('.menu__link').click(function () {
-//         var scroll_elem = $(this).attr('href');
-//         $('html, body').animate({
-//             scrollTop: $(scroll_elem).offset().top
-//         }, 1000);
-//     });
-//     // ДОБАВЛЯЕМ АКТИВНЫЙ КЛАСС ШАПКЕ
-//     function headerActiveToggle() {
-//         const scrollSize = window.pageYOffset
-//         scrollSize > 1 ? header.classList.add('active') : header.classList.remove('active')
-//     }
-//     window.addEventListener('load', headerActiveToggle) // ПРИ ПЕРЕЗАГРУЗКЕ СТРАНИЦЫ ЕСЛИ СТРАНИЦА УЖЕ ПРОСКРОЛЛЕНА
-//     window.addEventListener('scroll', headerActiveToggle) // ПРИ СКРОЛЛЕ
-// });
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-var mMenu = function mMenu() {
+var headerLogic = function headerLogic() {
+  var header = document.querySelector('.header');
   var gamburger = document.querySelector('.burger');
   gamburger.addEventListener('click', function () {
     this.classList.toggle('is-open');
     document.querySelector('.menu').classList.toggle('is-open');
   });
+  $('.menu__link').click(function () {
+    document.querySelector('.menu').classList.toggle('is-open');
+    gamburger.classList.toggle('is-open');
+    var scroll_elem = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(scroll_elem).offset().top
+    }, 1000);
+  });
+
+  function headerActiveToggle() {
+    var scrollSize = window.pageYOffset;
+    scrollSize > 1 ? header.classList.add('active') : header.classList.remove('active');
+  }
+
+  window.addEventListener('load', headerActiveToggle); // ПРИ ПЕРЕЗАГРУЗКЕ СТРАНИЦЫ ЕСЛИ СТРАНИЦА УЖЕ ПРОСКРОЛЛЕНА
+
+  window.addEventListener('scroll', headerActiveToggle); // ПРИ СКРОЛЛЕ
 }; // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ МАСКА ДЛЯ ИНПУТОВ (https://github.com/RobinHerbots/Inputmask)
 
 
@@ -166,6 +167,7 @@ var map = function map() {
 }; // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ INIT
 
 
-mMenu();
+headerLogic();
 sliders();
-accordeons('.faq', '.faq__item', '.faq__title', '.faq__content', 'faq__item opened', 'faq__item closed'); // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+accordeons('.faq', '.faq__item', '.faq__title', '.faq__content', 'faq__item opened', 'faq__item closed');
+accordeons('.faq-2', '.faq__item', '.faq__title', '.faq__content', 'faq__item opened', 'faq__item closed'); // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

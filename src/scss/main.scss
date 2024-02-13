@@ -39,7 +39,7 @@ html{
 	}
 }
 body{
-	height: 9500px;
+	padding-top: 120px;
 	font-family: var(--font-0);
 	font-size: 16px;
 	color: var(--color-0);
@@ -88,12 +88,12 @@ input, textarea{
   }
   
   * ::-webkit-scrollbar-track {
-    background: var(--color-3); /* цвет зоны отслеживания */
+    background: var(--color-bg); /* цвет зоны отслеживания */
     border-radius: 20px;
   }
   
   * ::-webkit-scrollbar-thumb {
-    background-color: var(--color-1); /* цвет бегунка */
+    background-color: var(--color-3); /* цвет бегунка */
     border-radius: 20px; /* округлось бегунка */
     border: 3px solid transparent;
   }

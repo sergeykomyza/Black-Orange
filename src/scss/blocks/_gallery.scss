@@ -1,6 +1,10 @@
 .gallery{
 
+  margin-bottom: 144px;
   overflow-x: hidden;
+  @include mediaWidth2{
+    margin-bottom: 96px; 
+  }
 
   &__navbox{
     display: flex;
@@ -27,7 +31,6 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid var(--color-0);
     background: var(--color-3);
     svg *{
       fill: var(--color-1); 
@@ -38,6 +41,7 @@
     &:disabled{
       opacity: 1;
       background: transparent;
+      border: 1px solid var(--color-0);
       svg *{
         fill: var(--color-0); 
       }

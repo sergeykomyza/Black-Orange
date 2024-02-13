@@ -1,15 +1,27 @@
 .header{
 
-  padding-top: 62px;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 60px;
+  background: var(--color-bg);
+  transition: all .3s;
 
-   @include mediaWidth3{
+  @include mediaWidth3{
     padding-top: 30px; 
-   }
+  }
 
   &__box{
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  &.active{
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
 }
@@ -104,4 +116,4 @@
       }   
     }
   }
- }
+}

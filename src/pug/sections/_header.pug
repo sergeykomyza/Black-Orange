@@ -2,10 +2,10 @@ include ./../mixins/_mixin.pug
 
 -
   const menu = [
-    {text: 'каталог',  link: ''},
-    {text: 'обзор',    link: ''},
-    {text: 'состав',   link: ''},
-    {text: 'контакты', link: ''}
+    {text: 'каталог',  link: '#catalog'},
+    {text: 'обзор',    link: '#'},
+    {text: 'состав',   link: '#'},
+    {text: 'контакты', link: '#contacts'}
   ]
 
 header.header
@@ -16,7 +16,7 @@ header.header
         ul.menu__list 
           each item in menu 
             li.menu__item 
-              a.menu__link(href="")= item.text  
+              a.menu__link(href=`${item.link}`)= item.text  
       button.burger 
         each span in [1, 2, 3]
           span  

@@ -17,6 +17,10 @@
   border: none;
   border-radius: 50px;
   background: var(--color-3);
+  transition: all .3s;
+  &:hover{
+    background: var(--color-3-hover);
+  }
 }
 
 .section-titlebox{

@@ -1,4 +1,11 @@
 .faq{
+
+  &-2{
+    margin-bottom: 150px;
+    @include mediaWidth2{
+      margin-bottom: 100px; 
+    }
+  }
   
   &__title{
     display: flex;
@@ -30,6 +37,7 @@
   }
 
   &__icon{
+    flex-shrink: 0;
     transition: all .3s;
   }
 
